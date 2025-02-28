@@ -1,0 +1,5 @@
+.header_clip{
+    background-color: #0E4C9C;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+    /* border-bottom-left-radius: 10px; */
+}

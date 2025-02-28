@@ -1,0 +1,61 @@
+.services_clip{
+  clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 90% 100%, 0% 100%);
+}
+
+.swiper_services {
+  position: relative !important;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper_services .swiper {
+  margin-inline: initial;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+}
+
+.swiper_services .swiper-button-prev::after,
+.swiper_services .swiper-button-next::after {
+  content: "";
+}
+.swiper_services .swiper-button-prev,
+.swiper_services .swiper-button-next {
+  bottom: initial;
+  top: 2rem;
+  width: 40px;
+  height: 40px;
+  background-color: #F6BF22;
+  border-radius: 50%;
+  font-size: 1rem;
+  padding: 6px;
+  color: white;
+}
+.swiper_services .swiper-button-prev {
+  left: calc(50% - 4rem);
+}
+
+.swiper_services .swiper-button-next {
+  right: calc(50% - 4rem);
+}
+
+.swiper_services .swiper-pagination {
+  position: absolute !important;
+  bottom: 0 !important;
+  width: 100%;
+  text-align: center;
+}
+
+.swiper_services .swiper-pagination .swiper-pagination-bullet {
+  background-color: #F6BF22;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.swiper_services .swiper-pagination .swiper-pagination-bullet-active {
+  width: 16px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #F6BF22;
+}

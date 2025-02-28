@@ -1,0 +1,42 @@
+ul .footer_link {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: 100%;
+}
+
+ul .footer_link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: #f6bf22;
+  transition: width 0.5s ease;
+}
+
+ul .active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: #f6bf22;
+  transition: width 0.5s ease;
+}
+
+ul .footer_link:hover {
+  transform: translateX(5px);
+  transition: transform 0.5s ease;
+}
+
+ul .footer_link:hover::after {
+  width: 100%;
+}
+
+
+.bg-color{
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) -30.62%, #153352 97.41%);
+}

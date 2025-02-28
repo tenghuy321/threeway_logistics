@@ -85,7 +85,7 @@ const Header = () => {
                     </Button>
                 </div>
 
-                <Drawer open={isOpen} onClose={() => setIsOpen(false)} position="left" className="w-72 p-0 transform transition-all duration-500 ease-in-out">
+                <Drawer open={isOpen} onClose={() => setIsOpen(false)} position="left" className="w-72 bg-[#fff] p-0 transform transition-all duration-500 ease-in-out">
                     <div className="flex justify-between items-center py-3 px-4">
                         <img src={logo} alt="" className="w-8 h-8" />
                         <button onClick={() => setIsOpen(false)} className="text-[#F6BF22] focus:outline-none">
@@ -100,7 +100,7 @@ const Header = () => {
                             <li className="w-full">
                                 <div className="flex items-center justify-between w-full">
                                     <NavLink to="/" onClick={() => setIsOpen(false)}
-                                        className={({ isActive }) => isActive ? "text-[#0E4C9C] font-bold w-full block" : "text-[#fff]"}>
+                                        className={({ isActive }) => isActive ? "text-[#0E4C9C] font-bold w-full block" : "text-[#000]"}>
                                         About Us
                                     </NavLink>
                                     <button onClick={() => setIsAboutDropdownOpen(!isAboutDropdownOpen)}
@@ -116,9 +116,9 @@ const Header = () => {
                                     ${isAboutDropdownOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="ml-4 mt-2">
                                         <ul>
-                                            <li><NavLink onClick={() => setIsOpen(false)} to="/about#aboutus" className="mt-1 text-[14px] text-[#fff]">About Us</NavLink></li>
-                                            <li><NavLink onClick={() => setIsOpen(false)} to="/about#whyus" className="mt-1 text-[14px] text-[#fff]">Why Us</NavLink></li>
-                                            <li><NavLink onClick={() => setIsOpen(false)} to="/about#clients" className="mt-1 text-[14px] text-[#fff]">Our Clients</NavLink></li>
+                                            <li><NavLink onClick={() => setIsOpen(false)} to="/about#aboutus" className="mt-1 text-[14px] text-[#000]">About Us</NavLink></li>
+                                            <li><NavLink onClick={() => setIsOpen(false)} to="/about#whyus" className="mt-1 text-[14px] text-[#000]">Why Us</NavLink></li>
+                                            <li><NavLink onClick={() => setIsOpen(false)} to="/about#clients" className="mt-1 text-[14px] text-[#000]">Our Clients</NavLink></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -127,7 +127,7 @@ const Header = () => {
                             <li className="w-full">
                                 <div className="flex items-center justify-between w-full">
                                     <NavLink to="/logistics" onClick={() => setIsOpen(false)}
-                                        className={({ isActive }) => isActive ? "text-[#0E4C9C] font-bold" : "text-[#fff]"}>
+                                        className={({ isActive }) => isActive ? "text-[#0E4C9C] font-bold" : "text-[#000]"}>
                                         Logistics
                                     </NavLink>
                                     <button onClick={() => setIsLogisticsDropdownOpen(!isLogisticsDropdownOpen)}
@@ -143,10 +143,10 @@ const Header = () => {
                                     ${isLogisticsDropdownOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="ml-4 mt-2">
                                         <ul>
-                                            <li><NavLink onClick={() => setIsOpen(false)} to="/logistics#vision" className="text-[14px] text-[#fff]">Vision</NavLink></li>
-                                            <li><NavLink onClick={() => setIsOpen(false)} to="/logistics#mission" className="text-[14px] text-[#fff]">Mission</NavLink></li>
-                                            <li><NavLink onClick={() => setIsOpen(false)} to="/logistics#messages" className="text-[14px] text-[#fff]">Message from Ceo</NavLink></li>
-                                            <li><NavLink onClick={() => setIsOpen(false)} to="/logistics#our_people" className="text-[14px] text-[#fff]">Our People</NavLink></li>
+                                            <li><NavLink onClick={() => setIsOpen(false)} to="/logistics#vision" className="text-[14px] text-[#000]">Vision</NavLink></li>
+                                            <li><NavLink onClick={() => setIsOpen(false)} to="/logistics#mission" className="text-[14px] text-[#000]">Mission</NavLink></li>
+                                            <li><NavLink onClick={() => setIsOpen(false)} to="/logistics#messages" className="text-[14px] text-[#000]">Message from Ceo</NavLink></li>
+                                            <li><NavLink onClick={() => setIsOpen(false)} to="/logistics#our_people" className="text-[14px] text-[#000]">Our People</NavLink></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -155,7 +155,7 @@ const Header = () => {
                             <li className="w-full">
                                 <div className="flex items-center justify-between w-full">
                                     <NavLink to="/services" onClick={() => setIsOpen(false)}
-                                        className={({ isActive }) => isActive ? "text-[#0E4C9C] font-bold" : "text-[#fff]"}>
+                                        className={({ isActive }) => isActive ? "text-[#0E4C9C] font-bold" : "text-[#000]"}>
                                         Services
                                     </NavLink>
                                     <button onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}
@@ -171,7 +171,7 @@ const Header = () => {
                                     ${isServicesDropdownOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="ml-4 mt-2">
                                         <ul>
-                                            <li><NavLink onClick={() => setIsOpen(false)} to="/services#feasibility" className="mt-1 text-[14px] text-[#0E4C9C]"fff>Our Services</NavLink></li>
+                                            <li><NavLink onClick={() => setIsOpen(false)} to="/services#feasibility" className="mt-1 text-[14px] text-[#000]">Our Services</NavLink></li>
                                             <li><NavLink onClick={() => setIsOpen(false)} to="/services#project_management" className="mt-1 text-[14px] text-[#0E4C9C]">Future Goal</NavLink></li>
                                         </ul>
                                     </div>
@@ -181,14 +181,14 @@ const Header = () => {
 
                             <li className="w-full">
                                 <NavLink to="/career" onClick={() => setIsOpen(false)}
-                                    className={({ isActive }) => isActive ? "text-[#0E4C9C] font-bold w-full block" : "text-[#fff]"}>
+                                    className={({ isActive }) => isActive ? "text-[#0E4C9C] font-bold w-full block" : "text-[#000]"}>
                                     Career
                                 </NavLink>
                             </li>
 
                             <li className="w-full">
                                 <NavLink to="/contact" onClick={() => setIsOpen(false)}
-                                    className={({ isActive }) => isActive ? "text-[#0E4C9C] font-bold w-full block" : "text-[#fff]"}>
+                                    className={({ isActive }) => isActive ? "text-[#0E4C9C] font-bold w-full block" : "text-[#000]"}>
                                     Contact Us
                                 </NavLink>
                             </li>

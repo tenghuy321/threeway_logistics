@@ -71,7 +71,7 @@ const Header = () => {
             </div>
 
             {/* small screen */}
-            <div className='w-full flex items-center justify-between px-5 md:px-10 lg:hidden '>
+            <div className='w-full flex items-center justify-between px-5 md:px-10 lg:hidden bg_nav'>
                 <img src={logo} alt="" className='w-8 h-8' />
 
                 <div className="">

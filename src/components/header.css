@@ -7,3 +7,7 @@
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
 }
+/* .bg_nav{
+    background-color: #0E4C9C;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+} */

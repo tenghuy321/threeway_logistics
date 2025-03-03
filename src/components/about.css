@@ -96,14 +96,14 @@
 
 @media (min-width: 640px) and (max-width: 767px) {
   .image_after::before {
-    top: -47rem;
+    top: -46rem;
     width: 90%;
   }
 }
 
 @media (max-width: 639px) {
   .image_after::before {
-    top: -46rem;
+    top: -44rem;
     width: 90%;
   }
 }

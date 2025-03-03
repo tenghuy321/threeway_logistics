@@ -28,14 +28,15 @@ function App() {
     setIsLoading(true);
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
 
-    return () => clearTimeout(timer);
-  }, [location.pathname]); // Reset loading when the route changes
+      return () => clearTimeout(timer);
+    }, 2000)
+  }, [location.pathname]);
 
-  if (isLoading) {
-    return <Loading />;
+  if(isLoading){
+    return <Loading />
   }
+
   return (
     <>
       <div>

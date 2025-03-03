@@ -7,7 +7,7 @@ const Contact = () => {
 
       <div className='relative min-h-screen bg-cover bg-center' style={{ backgroundImage: `url(${footer_bg})` }}>
         <div className='absolute inset-0 w-full min-h-screen bg-[#001836] mix-blend-multiply'></div>
-        <div className='w-full h-full relative pt-[40px] md:pt-[130px] xl:pt-[150px] min-h-screen'>
+        <div className='w-full h-full relative pt-[10px] lg:pt-[130px] xl:pt-[150px] min-h-screen'>
           <div className='w-full max-w-7xl mx-auto flex items-center space-x-4 py-10 px-2 lg:py-0 z-10 text-[#fff]' data-aos='fade-right' data-aos-duration='1000'>
             <img src={logo} alt="" className='w-20 h-20' />
             <h1 className='text-[25px] sm:text-[30px] md:text-[40px] font-[700]'>Three Way Logistic</h1>

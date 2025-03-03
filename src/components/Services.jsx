@@ -122,13 +122,13 @@ const Services = () => {
         </div>
       </section>
 
-      <section id='future' className='relative top-[-50px] max-w-7xl mx-auto px-4'>
+      <section id='future' className='relative top-[-50px] max-w-7xl mx-auto px-2 md:px-4'>
         <hr className='h-4 bg-[#F6BF22] border-none' data-aos='fade-up' data-aos-duration='1500' />
         <div className='grid grid-cols-1 md:grid-cols-2 mt-2 overflow-hidden'>
-          <div className='bg-[#F6BF22] text-[#000] p-10 order-2 md:order-none' data-aos='fade-right' data-aos-duration='1800'>
-            <h1 className='text-[30px] lg:text-[40px] text-[#fff] font-[700] leading-none'>Future Business <br/> Plan</h1>
+          <div className='bg-[#F6BF22] text-[#000] p-4 md:p-10 order-2 md:order-none' data-aos='fade-right' data-aos-duration='1800'>
+            <h1 className='text-[25px] md:text-[30px] lg:text-[40px] text-[#fff] font-[700] leading-none'>Future Business <br/> Plan</h1>
 
-            <p className='pt-10 text-[11px] sm:text-[12px] lg:text-[15px] text-justify'>Three Way Logistics Co., LTD always strive for development, and by being flourished, we are so aware that 
+            <p className='pt-5 md:pt-10 text-[10px] sm:text-[12px] lg:text-[15px] text-justify'>Three Way Logistics Co., LTD always strive for development, and by being flourished, we are so aware that 
                 we must keep improving our flaws and being better from time to time. We know that logistics sector is very 
                 competitive and challenging, but we are very determined to moving forward through every shackle we experience
                 along the way. Moreover, we plan to expand Three Way Logistics Co., LTD to be bigger than it is today as we know 

@@ -18,7 +18,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: -450px;
+  top: -650px;
   background-image: url("../assets/images/about_image.png");
   width: 70%;
   height: 100%;
@@ -70,11 +70,17 @@
   animation-delay: calc(30s / 10 * (10 - 9) * -1);
 }
 .client_item.item10{
-    animation-delay: calc(30s / 10 * (10 - 10) * -1);
+  animation-delay: calc(30s / 10 * (10 - 10) * -1);
+}
+
+@media (min-width: 1441px) and (max-width: 1599px) {
+  .image_after::before {
+    top: -460px;
+    width: 70%;
   }
+}
 
-
-@media (min-width: 1024px) and (max-width: 1279px) {
+@media (min-width: 1024px) and (max-width: 1439px) {
   .image_after::before {
     top: -430px;
     width: 90%;
@@ -97,7 +103,7 @@
 
 @media (max-width: 639px) {
   .image_after::before {
-    top: -47rem;
+    top: -48rem;
     width: 90%;
   }
 }

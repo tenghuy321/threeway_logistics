@@ -51,7 +51,9 @@ const Logistics = () => {
 
               <div className='flex flex-col space-y-2 text-justify'>
                 <h1 className='text-[25px] lg:text-[30px] font-[700]'>Vision</h1>
-                <p>Three Way Logistics Co., LTD have a vision to strive to be the most reliable and efficient logistics company in Cambodia, which is able to provide the value, trust, and a better service to our customers and society as a whole.</p>
+                <p>Three Way Logistics Co., LTD have a vision to strive to be the most reliable and efficient 
+                    logistics company in Cambodia, which is able to provide the value, trust, and a better 
+                    service to our customers and society as a whole.</p>
               </div>
             </div>
 
@@ -67,7 +69,6 @@ const Logistics = () => {
                     <path d="M19.8755 3.46149L18.7074 2.29341C17.2022 0.788232 14.7619 0.788232 13.2566 2.29341C11.7514 3.79867 11.7514 6.23901 13.2566 7.74426L19.8755 14.3631L26.4943 7.74426C27.9996 6.23901 27.9996 3.79867 26.4943 2.29341C24.9891 0.788232 22.5487 0.788232 21.0436 2.29341L19.8755 3.46149Z" stroke="#F6BF22" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                   </g>
                 </svg>
-
               </div>
 
               <div className='flex flex-col space-y-2 text-justify'>
@@ -92,8 +93,8 @@ const Logistics = () => {
 
       {/* message from ceo */}
       <section>
-        <div className='max-w-6xl mx-auto px-4 xl:px-0 flex flex-col md:flex-row items-start md:items-center md:space-x-12 overflow-hidden' id='messages'>
-          <img src={ceo_image} alt="" className='w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] object-contain object-center ' data-aos='fade-right' data-aos-duration='1500' />
+        <div className='max-w-6xl mx-auto px-4 xl:px-0 flex flex-col sm:flex-row items-start sm:items-center sm:space-x-6 md:space-x-12 overflow-hidden' id='messages'>
+          <img src={ceo_image} alt="" className='w-full md:w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] object-contain object-center ' data-aos='fade-right' data-aos-duration='1500' />
           <div className='text-[12px] md:text-[14px] space-y-3 text-justify px-0 sm:px-8 md:px-0 pb-10 md:pb-0' data-aos='fade-left' data-aos-duration='1500'>
             <h1 className='text-[#F6BF22] text-[25px] sm:text-[30px] md:text-[40px] font-[700] pt-2 md:pt-0'>Messages From CEO</h1>
             <p>In Three Way Logistics Co., LTD, we really believe in honesty, hard-work, reliability, dedication, mutual benefit, and social contribution. If you treasure those things too, Three Way Logistics Co., LTD is the right partner and place for you to make your business flourish.</p>

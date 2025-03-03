@@ -81,10 +81,10 @@ const About = () => {
 
       {/* aboutus */}
       <section>
-        <div className='max-w-7xl mx-auto px-2 md:px-4 text-[14px] md:text-[16px] pt-10 md:pt-0' id='aboutus'>
+        <div className='max-w-7xl mx-auto px-2 md:px-4 text-[12px] sm:text-[14px] md:text-[16px] pt-10 md:pt-0' id='aboutus'>
           <h1 className='text-[30px] md:text-[40px] text-[#F6BF22] font-[700]' data-aos='fade-right' data-aos-duration='1000'>About Us</h1>
-          <div className='mt-2 flex flex-col space-y-3 text-justify'>
-            <h1 className='text-[30px] md:text-[40px] text-[#0E4C9C] font-[700]' data-aos='fade-right' data-aos-duration='1200'>Three Way Logistics Co., LTD </h1>
+          <div className='mt-2 flex flex-col space-y-3'>
+            <h1 className='text-[25px] sm:text-[30px] md:text-[40px] text-[#0E4C9C] font-[700] leading-none' data-aos='fade-right' data-aos-duration='1200'>Three Way Logistics Co., LTD </h1>
             <p className='pt-2 md:pt-4' data-aos='fade-right' data-aos-duration='1400'>was founded and established on 1st February 2024 by Mr. Meng Pheakdey. The company is located in Sangkat Srah Chork, Khan Doun Penh, Phnom Penh.</p>
             <p data-aos='fade-right' data-aos-duration='1600'>The reason that Three Way Logistics Co., LTD was created is that we would like to contribute into the importing and exporting sectors as we firmly believe that our efforts in contributing into this sector will be an important part in joining hands with other relative parties to develop the sector in the country as strong as in order to compete with logistics sector in other countries. </p>
             <p data-aos='fade-right' data-aos-duration='1800'>Speaking of brand imported, we do not have certain brands to import as we generally import various types of products.</p>
@@ -93,13 +93,13 @@ const About = () => {
       </section>
 
       {/* why us */}
-      <section className='mt-[16rem] image_after'>
+      <section className='mt-[6rem] md:mt-[16rem] image_after'>
         <hr className='h-[8px] bg-[#F6BF22]' />
         <div className='relative bg-[#0E4C9C] mt-2 min-h-screen py-20 sm:py-32 md:py-10' id='whyus'>
           <div className='max-w-5xl mx-auto flex flex-col justify-center min-h-screen'>
             <h1 className='text-[30px] md:text-[40px] text-[#F6BF22] font-[700] px-4' data-aos='fade-right' data-aos-duration='1000'>Why Us</h1>
             <div className='grid grid-cols-1 md:grid-cols-3 pt-20 gap-10 px-4 sm:px-20 md:px-2'>
-              <div className='text-[#fff] text-[14px] md:text-[16px]' data-aos='fade-up' data-aos-duration='1000'>
+              <div className='text-[#fff] text-[12px] md:text-[14px]' data-aos='fade-up' data-aos-duration='1000'>
                 <p className='bg-[#7FCFEE] text-[150px] font-[700] p-4 leading-none h-[230px] flex items-end clip-bottom-right'>
                   01
                 </p>
@@ -107,34 +107,34 @@ const About = () => {
                 <p className='py-4'>It has been a year since Three Way Logistics Co., LTD stepped its foot on freight forwarding business,</p>
 
                 {showMore1 && (
-                  <p className='py-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, ipsum.</p>
+                  <p className='py-1'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, ipsum.</p>
                 )}
                 <button onClick={() => setShowMore1(!showMore1)} className='bg-[#F6BF22] px-4 py-1 text-[14px] text-[#0E4C9C] rounded-sm font-[600] mt-6'>
                   {showMore1 ? 'Read Less' : 'Read More'}
                 </button>
               </div>
 
-              <div className='text-[#fff] text-[14px] md:text-[16px]' data-aos='fade-up' data-aos-duration='1500'>
+              <div className='text-[#fff] text-[12px] md:text-[14px]' data-aos='fade-up' data-aos-duration='1500'>
                 <p className='bg-[#306BB6] text-[150px] font-[700] p-4 leading-none h-[230px] flex items-end clip-bottom-right'>
                   02
                 </p>
                 <p className='py-4'>In Three Way Logistics Co., LTD, we have qualified and experienced people working in logistics sector for years</p>
                 {showMore2 && (
-                  <p className='py-2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, saepe.</p>
+                  <p className='py-1'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, saepe.</p>
                 )}
                 <button onClick={() => setShowMore2(!showMore2)} className='bg-[#F6BF22] px-4 py-1 text-[14px] text-[#0E4C9C] rounded-sm font-[600] mt-6'>
                   {showMore2 ? 'Read Less' : 'Read More'}
                 </button>
               </div>
 
-              <div className='text-[#fff] text-[14px] md:text-[16px]' data-aos='fade-up' data-aos-duration='2000'>
+              <div className='text-[#fff] text-[12px] md:text-[14px]' data-aos='fade-up' data-aos-duration='2000'>
                 <p className='bg-[#F6BF22] text-[150px] font-[700] p-4 leading-none h-[230px] flex items-end clip-bottom-right'>
                   03
                 </p>
                 <p className='py-4'>In Three Way Logistics Co., LTD, we prioritize our customers the most as we are able to provide logistics</p>
 
                 {showMore3 && (
-                  <p className='py-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, veritatis.</p>
+                  <p className='py-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, veritatis.</p>
                 )}
 
                 <button onClick={() => setShowMore3(!showMore3)} className='bg-[#F6BF22] px-4 py-1 text-[14px] text-[#0E4C9C] rounded-sm font-[600] mt-6'>

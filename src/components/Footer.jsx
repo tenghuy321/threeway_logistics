@@ -14,9 +14,9 @@ const Footer = () => {
             <div className='relative w-full min-h-[60%] py-10 text-[#fff]'>
                 <div className='absolute inset-0 w-full h-full bg-[#001836] mix-blend-multiply'></div>
                 <div className='relative max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 px-2'>
-                    <div className='text-[13px] xl:text-[14px]'>
-                        <h1 className='font-[700]'>Information</h1>
-                        <ul className='flex flex-col space-y-2 pt-2'>
+                    <div className='text-[12px] xl:text-[13px]'>
+                        <h1 className='text-[13px] xl:text-[14px] font-[700]'>Information</h1>
+                        <ul className='flex flex-col space-y-3 pt-2'>
                             <li><NavLink className={({ isActive }) => `footer_link ${isActive ? 'active font-[600]' : ''}`} to="/">About Us</NavLink></li>
                             <li><NavLink className="footer_link" to="/logistics">Logistics</NavLink></li>
                             <li><NavLink className="footer_link" to="/services">Services</NavLink></li>
@@ -25,11 +25,11 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    <div className='text-[13px] xl:text-[14px] pt-5 sm:pt-0'>
-                        <h1 className='font-[700]' >Three Way Logistics Co., LTD </h1>
+                    <div className='text-[12px] xl:text-[13px] pt-5 sm:pt-0'>
+                        <h1 className='text-[13px] xl:text-[14px] font-[700]' >Three Way Logistics Co., LTD </h1>
                         <p className='pt-2'>was founded and established on 1st February 2024 by Mr. Meng Pheakdey. The company is located in Sangkat Srah Chork, Khan Doun Penh, Phnom Penh.</p>
 
-                        <div className='pt-5 text-[14px] xl:text-[15px] space-y-2'>
+                        <div className='pt-5 text-[12px] xl:text-[13px] space-y-3'>
                             <p>For all business inquiries, please contact to:</p>
                             <p>Mr. Meng Pheakdey (General Manager)</p>
                             <p><span><a href="tel:099 709 797">099 709 797</a></span> / <span><a href="tel:096 333 0904">096 333 0904</a></span></p>
@@ -38,7 +38,7 @@ const Footer = () => {
                     </div>
 
                     <div className="w-full lg:w-[70%] md:ml-auto flex flex-col h-[300px] lg:h-[250px] xl:h-[300px] col-span-1 sm:col-span-2 py-4 lg:py-0">
-                        <iframe className='rounded-md'
+                        <iframe className='rounded-sm'
                             title="Google Map"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.552959492127!2d104.9072938748017!3d11.583871243782143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951615e57be5f%3A0x1d56ed7e547a77f7!2sTH1%20Building!5e0!3m2!1sen!2skh!4v1740710425611!5m2!1sen!2skh"
                             width="100%"

@@ -7,9 +7,9 @@ import { NavLink, useLocation } from "react-router-dom";
 const Header = () => {
     const [isOpen, setIsOpen] = useState(true);
     const location = useLocation();
-    const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
-    const [isLogisticsDropdownOpen, setIsLogisticsDropdownOpen] = useState(false);
-    const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
+    // const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
+    // const [isLogisticsDropdownOpen, setIsLogisticsDropdownOpen] = useState(false);
+    // const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
 
     useEffect(() => {
         if (isOpen) {
@@ -23,7 +23,7 @@ const Header = () => {
         setIsOpen(false); // Close the drawer when the route changes
     }, [location]);
     return (
-        <section className='w-full mx-auto flex items-center justify-between h-[60px] lg:h-[40px] relative'>
+        <section className='w-full mx-auto flex items-center justify-between h-[60px] lg:h-[40px] relative z-[999]'>
             <div className='w-full h-full lg:flex hidden items-center pl-5 xl:pl-10 space-x-4'>
                 <div className='text-[12px] font-[400] flex items-center space-x-2 text-[#0E4C9C]'>
                     <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -45,7 +45,7 @@ const Header = () => {
                 </div>
             </div>
 
-            <div className='lg:flex hidden items-center justify-center space-x-3 h-full w-1/2 rounded-bl-[10px] header_clip'>
+            <div className='lg:flex hidden items-center justify-center space-x-3 h-full w-1/2 header_clip border-none'>
                 <p className='text-[12px] text-[#fff] font-[600]'>Follow Us</p>
                 <div className='flex items-center space-x-4'>
                     <a href="#" className='transition-all hover:scale-110 duration-300'>
@@ -71,24 +71,24 @@ const Header = () => {
             </div>
 
             {/* small screen */}
-            <div className='w-full flex items-center justify-between px-5 md:px-10 lg:hidden'>
+            <div className='w-full flex items-center justify-between px-5 md:px-10 lg:hidden '>
                 <img src={logo} alt="" className='w-8 h-8' />
 
-                <div className="p-0">
-                    <Button onClick={() => setIsOpen(true)} className="group relative flex items-stretch justify-center p-0 text-center font-medium bg-transparent transition-[color,background-color,border-color,text-decoration-color,fill,stroke,box-shadow] focus:z-10 border border-transparent text-white focus:ring-0 focus:bg-transparent enabled:hover:bg-transparent rounded-lg focus:outline-none">
+                <div className="">
+                    <Button onClick={() => setIsOpen(true)} className="group relative flex items-stretch justify-center text-center font-medium bg-transparent transition-[color,background-color,border-color,text-decoration-color,fill,stroke,box-shadow] duration-300 focus:z-10 border border-transparent focus:ring-0 focus:bg-transparent">
                         <svg width="20" height="20" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M60.9741 138.583H96.3593C119.641 138.583 138.583 119.641 138.583 96.3593V60.9741C138.583 37.6923 119.641 18.75 96.3593 18.75H60.9741C37.6923 18.75 18.75 37.6923 18.75 60.9741V96.3593C18.75 119.641 37.6923 138.583 60.9741 138.583ZM37.5 60.9741C37.5 48.0286 48.0286 37.5 60.9741 37.5H96.3593C109.305 37.5 119.833 48.0286 119.833 60.9741V96.3593C119.833 109.305 109.305 119.833 96.3593 119.833H60.9741C48.0286 119.833 37.5 109.305 37.5 96.3593V60.9741Z" fill="#F6BF22" />
-                            <path d="M239.026 18.75H203.641C180.359 18.75 161.417 37.6923 161.417 60.9741V96.3593C161.417 119.641 180.359 138.583 203.641 138.583H239.026C262.308 138.583 281.25 119.641 281.25 96.3593V60.9741C281.25 37.6923 262.308 18.75 239.026 18.75ZM262.5 96.3593C262.5 109.305 251.972 119.833 239.026 119.833H203.641C190.696 119.833 180.167 109.305 180.167 96.3593V60.9741C180.167 48.0286 190.696 37.5 203.641 37.5H239.026C251.972 37.5 262.5 48.0286 262.5 60.9741V96.3593Z" fill="#F6BF22" />
-                            <path d="M60.9741 281.25H96.3593C119.641 281.25 138.583 262.308 138.583 239.026V203.641C138.583 180.359 119.641 161.417 96.3593 161.417H60.9741C37.6923 161.417 18.75 180.359 18.75 203.641V239.026C18.75 262.308 37.6923 281.25 60.9741 281.25ZM37.5 203.641C37.5 190.696 48.0286 180.167 60.9741 180.167H96.3593C109.305 180.167 119.833 190.696 119.833 203.641V239.026C119.833 251.972 109.305 262.5 96.3593 262.5H60.9741C48.0286 262.5 37.5 251.972 37.5 239.026V203.641Z" fill="#F6BF22" />
-                            <path d="M221.338 161.417C188.297 161.417 161.417 188.297 161.417 221.338C161.417 254.37 188.297 281.25 221.338 281.25C254.37 281.25 281.25 254.37 281.25 221.338C281.25 188.297 254.37 161.417 221.338 161.417ZM221.338 262.5C198.633 262.5 180.167 244.034 180.167 221.338C180.167 198.633 198.633 180.167 221.338 180.167C244.034 180.167 262.5 198.633 262.5 221.338C262.5 244.034 244.034 262.5 221.338 262.5Z" fill="#F6BF22" />
+                            <path d="M60.9741 138.583H96.3593C119.641 138.583 138.583 119.641 138.583 96.3593V60.9741C138.583 37.6923 119.641 18.75 96.3593 18.75H60.9741C37.6923 18.75 18.75 37.6923 18.75 60.9741V96.3593C18.75 119.641 37.6923 138.583 60.9741 138.583ZM37.5 60.9741C37.5 48.0286 48.0286 37.5 60.9741 37.5H96.3593C109.305 37.5 119.833 48.0286 119.833 60.9741V96.3593C119.833 109.305 109.305 119.833 96.3593 119.833H60.9741C48.0286 119.833 37.5 109.305 37.5 96.3593V60.9741Z" fill="#0E4C9C" />
+                            <path d="M239.026 18.75H203.641C180.359 18.75 161.417 37.6923 161.417 60.9741V96.3593C161.417 119.641 180.359 138.583 203.641 138.583H239.026C262.308 138.583 281.25 119.641 281.25 96.3593V60.9741C281.25 37.6923 262.308 18.75 239.026 18.75ZM262.5 96.3593C262.5 109.305 251.972 119.833 239.026 119.833H203.641C190.696 119.833 180.167 109.305 180.167 96.3593V60.9741C180.167 48.0286 190.696 37.5 203.641 37.5H239.026C251.972 37.5 262.5 48.0286 262.5 60.9741V96.3593Z" fill="#0E4C9C" />
+                            <path d="M60.9741 281.25H96.3593C119.641 281.25 138.583 262.308 138.583 239.026V203.641C138.583 180.359 119.641 161.417 96.3593 161.417H60.9741C37.6923 161.417 18.75 180.359 18.75 203.641V239.026C18.75 262.308 37.6923 281.25 60.9741 281.25ZM37.5 203.641C37.5 190.696 48.0286 180.167 60.9741 180.167H96.3593C109.305 180.167 119.833 190.696 119.833 203.641V239.026C119.833 251.972 109.305 262.5 96.3593 262.5H60.9741C48.0286 262.5 37.5 251.972 37.5 239.026V203.641Z" fill="#0E4C9C" />
+                            <path d="M221.338 161.417C188.297 161.417 161.417 188.297 161.417 221.338C161.417 254.37 188.297 281.25 221.338 281.25C254.37 281.25 281.25 254.37 281.25 221.338C281.25 188.297 254.37 161.417 221.338 161.417ZM221.338 262.5C198.633 262.5 180.167 244.034 180.167 221.338C180.167 198.633 198.633 180.167 221.338 180.167C244.034 180.167 262.5 198.633 262.5 221.338C262.5 244.034 244.034 262.5 221.338 262.5Z" fill="#0E4C9C" />
                         </svg>
                     </Button>
                 </div>
 
-                <Drawer open={isOpen} onClose={() => setIsOpen(false)} position="left" className="w-72 bg-[#fff] p-0 transform transition-all duration-500 ease-in-out">
+                <Drawer open={isOpen} onClose={() => setIsOpen(false)} position="left" className="w-full sm:w-72 bg_glass !p-0 transform transition-all duration-500 ease-in-out">
                     <div className="flex justify-between items-center py-3 px-4">
                         <img src={logo} alt="" className="w-8 h-8" />
-                        <button onClick={() => setIsOpen(false)} className="text-[#F6BF22] focus:outline-none">
+                        <button onClick={() => setIsOpen(false)} className="text-[#0E4C9C] focus:outline-none">
                             <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M6 18L18 6M6 6l12 12" />
                             </svg>
@@ -96,99 +96,45 @@ const Header = () => {
                     </div>
                     <hr className="h-1 bg-[#F6BF22] border-none" />
                     <Drawer.Items className="z-[999]">
-                        <ul className="flex flex-col items-start justify-start space-y-5 pt-6 p-5">
+                        <ul className="flex flex-col items-start justify-start space-y-8 pt-6 p-5">
                             <li className="w-full">
                                 <div className="flex items-center justify-between w-full">
                                     <NavLink to="/" onClick={() => setIsOpen(false)}
-                                        className={({ isActive }) => isActive ? "text-[#0E4C9C] font-bold w-full block" : "text-[#000]"}>
+                                        className={({ isActive }) => isActive ? "text-[#F6BF22] font-bold w-full block bg-[#0E4C9C] pl-2 py-2 rounded-md" : "text-[#000] pl-2"}>
                                         About Us
                                     </NavLink>
-                                    <button onClick={() => setIsAboutDropdownOpen(!isAboutDropdownOpen)}
-                                        className={`transition-transform duration-500`}
-                                        style={{ transform: isAboutDropdownOpen ? 'rotate(225deg)' : 'rotate(0deg)' }}>
-
-                                        <svg className="w-4 h-4 text-[#0E4C9C]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 12h14m-7 7V5" />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div className={`transition-all duration-500 ease-in-out overflow-hidden 
-                                    ${isAboutDropdownOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="ml-4 mt-2">
-                                        <ul>
-                                            <li><NavLink onClick={() => setIsOpen(false)} to="/about#aboutus" className="mt-1 text-[14px] text-[#000]">About Us</NavLink></li>
-                                            <li><NavLink onClick={() => setIsOpen(false)} to="/about#whyus" className="mt-1 text-[14px] text-[#000]">Why Us</NavLink></li>
-                                            <li><NavLink onClick={() => setIsOpen(false)} to="/about#clients" className="mt-1 text-[14px] text-[#000]">Our Clients</NavLink></li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </li>
 
                             <li className="w-full">
                                 <div className="flex items-center justify-between w-full">
                                     <NavLink to="/logistics" onClick={() => setIsOpen(false)}
-                                        className={({ isActive }) => isActive ? "text-[#0E4C9C] font-bold" : "text-[#000]"}>
+                                        className={({ isActive }) => isActive ? "text-[#F6BF22] font-bold pl-2 py-2 bg-[#0E4C9C] rounded-md" : "text-[#000] pl-2"}>
                                         Logistics
                                     </NavLink>
-                                    <button onClick={() => setIsLogisticsDropdownOpen(!isLogisticsDropdownOpen)}
-                                        className={`transition-transform duration-500`}
-                                        style={{ transform: isLogisticsDropdownOpen ? 'rotate(225deg)' : 'rotate(0deg)' }}>
-
-                                        <svg className="w-4 h-4 text-[#0E4C9C]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 12h14m-7 7V5" />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div className={`transition-all duration-500 ease-in-out overflow-hidden 
-                                    ${isLogisticsDropdownOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="ml-4 mt-2">
-                                        <ul>
-                                            <li><NavLink onClick={() => setIsOpen(false)} to="/logistics#vision" className="text-[14px] text-[#000]">Vision</NavLink></li>
-                                            <li><NavLink onClick={() => setIsOpen(false)} to="/logistics#mission" className="text-[14px] text-[#000]">Mission</NavLink></li>
-                                            <li><NavLink onClick={() => setIsOpen(false)} to="/logistics#messages" className="text-[14px] text-[#000]">Message from Ceo</NavLink></li>
-                                            <li><NavLink onClick={() => setIsOpen(false)} to="/logistics#our_people" className="text-[14px] text-[#000]">Our People</NavLink></li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </li>
 
                             <li className="w-full">
                                 <div className="flex items-center justify-between w-full">
                                     <NavLink to="/services" onClick={() => setIsOpen(false)}
-                                        className={({ isActive }) => isActive ? "text-[#0E4C9C] font-bold" : "text-[#000]"}>
+                                        className={({ isActive }) => isActive ? "text-[#F6BF22] font-bold pl-2 py-2 bg-[#0E4C9C] rounded-md" : "text-[#000] pl-2"}>
                                         Services
                                     </NavLink>
-                                    <button onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}
-                                        className={`transition-transform duration-500`}
-                                        style={{ transform: isServicesDropdownOpen ? 'rotate(225deg)' : 'rotate(0deg)' }}>
-
-                                        <svg className="w-4 h-4 text-[#0E4C9C]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 12h14m-7 7V5" />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div className={`transition-all duration-500 ease-in-out overflow-hidden 
-                                    ${isServicesDropdownOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="ml-4 mt-2">
-                                        <ul>
-                                            <li><NavLink onClick={() => setIsOpen(false)} to="/services#feasibility" className="mt-1 text-[14px] text-[#000]">Our Services</NavLink></li>
-                                            <li><NavLink onClick={() => setIsOpen(false)} to="/services#project_management" className="mt-1 text-[14px] text-[#0E4C9C]">Future Goal</NavLink></li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </li>
 
 
                             <li className="w-full">
                                 <NavLink to="/career" onClick={() => setIsOpen(false)}
-                                    className={({ isActive }) => isActive ? "text-[#0E4C9C] font-bold w-full block" : "text-[#000]"}>
+                                    className={({ isActive }) => isActive ? "text-[#F6BF22] font-bold w-full block pl-2 py-2 bg-[#0E4C9C] rounded-md" : "text-[#000] pl-2"}>
                                     Career
                                 </NavLink>
                             </li>
 
                             <li className="w-full">
                                 <NavLink to="/contact" onClick={() => setIsOpen(false)}
-                                    className={({ isActive }) => isActive ? "text-[#0E4C9C] font-bold w-full block" : "text-[#000]"}>
+                                    className={({ isActive }) => isActive ? "text-[#F6BF22] font-bold w-full block pl-2 py-2 bg-[#0E4C9C] rounded-md" : "text-[#000] pl-2"}>
                                     Contact Us
                                 </NavLink>
                             </li>

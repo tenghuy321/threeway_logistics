@@ -93,12 +93,12 @@ const About = () => {
       </section>
 
       {/* why us */}
-      <section className='mt-[6rem] md:mt-[16rem] image_after'>
+      <section className='mt-[8rem] md:mt-[16rem] image_after'>
         <hr className='h-[8px] bg-[#F6BF22]' />
         <div className='relative bg-[#0E4C9C] mt-2 min-h-screen py-20 sm:py-32 md:py-10' id='whyus'>
           <div className='max-w-5xl mx-auto flex flex-col justify-center min-h-screen'>
             <h1 className='text-[30px] md:text-[40px] text-[#F6BF22] font-[700] px-4' data-aos='fade-right' data-aos-duration='1000'>Why Us</h1>
-            <div className='grid grid-cols-1 md:grid-cols-3 pt-20 gap-10 px-4 sm:px-20 md:px-2'>
+            <div className='grid grid-cols-1 md:grid-cols-3 pt-20 gap-10 px-4 sm:px-20 md:px-2 z-[999]'>
               <div className='text-[#fff] text-[12px] md:text-[14px]' data-aos='fade-up' data-aos-duration='1000'>
                 <p className='bg-[#7FCFEE] text-[150px] font-[700] p-4 leading-none h-[230px] flex items-end clip-bottom-right'>
                   01

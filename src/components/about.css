@@ -100,16 +100,16 @@
   }
 }
 
-@media (min-width: 640px) and (max-width: 767px) {
+/* @media (min-width: 640px) and (max-width: 767px) {
   .image_after::before {
-    top: -46rem;
+    top: -4rem;
     width: 90%;
   }
-}
+} */
 
-@media (max-width: 639px) {
+@media (max-width: 767px) {
   .image_after::before {
-    top: -44rem;
-    width: 90%;
+    top: -42rem;
+    width: 95%;
   }
 }

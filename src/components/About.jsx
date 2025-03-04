@@ -113,7 +113,7 @@ const About = () => {
             <div className='grid grid-cols-2 md:grid-cols-4 gap-10 pt-10'>
               <div className='col-span-2 md:col-span-4 flex items-center space-x-4' data-aos='fade-right' data-aos-duration='1000'>
                 <div className='bg-[#fff] p-2 leading-none h-[190px] lg:h-[230px] clip-logistic relative'>
-                  <img src={ceo_image} alt="" className='w-full h-full object-contain object-center' />
+                  <img src={ceo_image} alt="" className='w-[1/2] md:w-full h-full object-contain object-center' />
                 </div>
                 <div className='text-[#fff] text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px]'>
                   <h1 className='text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] font-[700]'>Mr. Meng Pheakdey</h1>

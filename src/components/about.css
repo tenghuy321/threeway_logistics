@@ -109,7 +109,7 @@
 
 @media (max-width: 767px) {
   .image_after::before {
-    top: -42rem;
+    top: -41rem;
     width: 95%;
   }
 }

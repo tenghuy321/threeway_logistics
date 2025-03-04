@@ -28,7 +28,7 @@ const Career = () => {
                         <path fillRule="evenodd" clipRule="evenodd" d="M15.3497 29C6.90093 29 0.0273438 22.4953 0.0273438 14.5C0.0273438 6.50467 6.90093 0 15.3497 0C23.7985 0 30.6721 6.50467 30.6721 14.5C30.6721 22.4953 23.7985 29 15.3497 29ZM23.2957 19.5937C23.4846 19.5937 23.6384 19.4483 23.6384 19.2695V10.1664L15.8425 16.0248C15.6983 16.1333 15.5239 16.1875 15.3497 16.1875C15.1754 16.1875 15.0011 16.1332 14.8568 16.0248L7.06104 10.1664V19.2695C7.06104 19.4483 7.2148 19.5937 7.4037 19.5937H23.2957ZM22.101 9.40625L15.3497 14.4798L8.59836 9.40625H22.101ZM25.2235 9.73052V19.2696C25.2235 20.2755 24.3586 21.0939 23.2957 21.0939H7.4037C6.34071 21.0939 5.47601 20.2755 5.47601 19.2696V9.73052C5.47601 8.72464 6.34077 7.9063 7.4037 7.9063H23.2957C24.3586 7.90624 25.2235 8.72464 25.2235 9.73052Z" fill="white" />
                       </svg>
                     </div>
-                    <a className='underline text-[#ffffff] text-[10px] sm:text-[12px] lg:text-[16px]' href="mailto: pheakdey.meng@threewaylogisticskh.com"> pheakdey.meng@threewaylogisticskh.com</a>
+                    <a className='underline text-[#ffffff] text-[12px] lg:text-[16px]' href="mailto: pheakdey.meng@threewaylogisticskh.com"> pheakdey.meng@threewaylogisticskh.com</a>
                   </div>
                 </div>
               </div>

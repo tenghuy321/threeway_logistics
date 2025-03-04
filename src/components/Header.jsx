@@ -101,6 +101,15 @@ const Header = () => {
                                 <div className="flex items-center justify-between w-full">
                                     <NavLink to="/" onClick={() => setIsOpen(false)}
                                         className={({ isActive }) => isActive ? "text-[#F6BF22] font-bold w-full block bg-[#0E4C9C] pl-2 py-2 rounded-md" : "text-[#000] pl-2"}>
+                                        Home
+                                    </NavLink>
+                                </div>
+                            </li>
+
+                            <li className="w-full">
+                                <div className="flex items-center justify-between w-full">
+                                    <NavLink to="/about" onClick={() => setIsOpen(false)}
+                                        className={({ isActive }) => isActive ? "text-[#F6BF22] font-bold w-full block pl-2 py-2 bg-[#0E4C9C] rounded-md" : "text-[#000] pl-2"}>
                                         About Us
                                     </NavLink>
                                 </div>
@@ -108,18 +117,9 @@ const Header = () => {
 
                             <li className="w-full">
                                 <div className="flex items-center justify-between w-full">
-                                    <NavLink to="/logistics" onClick={() => setIsOpen(false)}
-                                        className={({ isActive }) => isActive ? "text-[#F6BF22] font-bold pl-2 py-2 bg-[#0E4C9C] rounded-md" : "text-[#000] pl-2"}>
-                                        Logistics
-                                    </NavLink>
-                                </div>
-                            </li>
-
-                            <li className="w-full">
-                                <div className="flex items-center justify-between w-full">
                                     <NavLink to="/services" onClick={() => setIsOpen(false)}
-                                        className={({ isActive }) => isActive ? "text-[#F6BF22] font-bold pl-2 py-2 bg-[#0E4C9C] rounded-md" : "text-[#000] pl-2"}>
-                                        Services
+                                        className={({ isActive }) => isActive ? "text-[#F6BF22] font-bold w-full block pl-2 py-2 bg-[#0E4C9C] rounded-md" : "text-[#000] pl-2"}>
+                                        Logistics Services
                                     </NavLink>
                                 </div>
                             </li>

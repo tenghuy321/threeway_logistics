@@ -17,9 +17,9 @@ const Footer = () => {
                     <div className='text-[12px] xl:text-[13px]'>
                         <h1 className='text-[13px] xl:text-[14px] font-[700]'>Information</h1>
                         <ul className='flex flex-col space-y-3 pt-2'>
-                            <li><NavLink className={({ isActive }) => `footer_link ${isActive ? 'active font-[600]' : ''}`} to="/">About Us</NavLink></li>
-                            <li><NavLink className="footer_link" to="/logistics">Logistics</NavLink></li>
-                            <li><NavLink className="footer_link" to="/services">Services</NavLink></li>
+                            <li><NavLink className={({ isActive }) => `footer_link ${isActive ? 'active font-[600]' : ''}`} to="/">Home</NavLink></li>
+                            <li><NavLink className="footer_link" to="/about">About Us</NavLink></li>
+                            <li><NavLink className="footer_link" to="/services">Logistics Services</NavLink></li>
                             <li><NavLink className="footer_link" to="/career">Career</NavLink></li>
                             <li><NavLink className="footer_link" to="/contact">Contact Us</NavLink></li>
                         </ul>

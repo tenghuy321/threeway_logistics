@@ -1,11 +1,11 @@
 import { Routes, Route, useLocation } from "react-router-dom"
-import Header from "./components/Header"
-import Navbar from "./components/Navbar"
-import About from "./components/About"
-import Logistics from "./components/Logistics"
-import Services from "./components/Services"
-import Career from "./components/Career"
-import Contact from "./components/Contact"
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import About from "./components/About";
+import Services from "./components/Services";
+import Career from "./components/Career";
+import Contact from "./components/Contact";
 
 import { useEffect, useState } from "react";
 import Loading from "./components/Loading";
@@ -44,8 +44,8 @@ function App() {
         <Navbar/>
         <main>
           <Routes>
-            <Route path="/" element={<About />}></Route>
-            <Route path="/logistics" element={<Logistics />}></Route>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/about" element={<About />}></Route>
             <Route path="/services" element={<Services />}></Route>
             <Route path="/career" element={<Career />}></Route>
             <Route path="/contact" element={<Contact />}></Route>

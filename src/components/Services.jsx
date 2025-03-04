@@ -68,7 +68,7 @@ const Services = () => {
                 <div key={index} className="md:w-1/3 p-3" data-aos='flip-up' data-aos-duration='1500'>
                   <div className="hover:translate-y-[-10px] duration-500 transition-all ease-in-out">
                     <img src={services.image} alt=""
-                      className="w-full h-full" />
+                      className="w-full h-[200px] lg:h-[230px] object-cover object-center" />
                     <div className="text-[#0E4C9C] flex items-center space-x-4 mt-3 text-[11px] lg:text-[14px] xl:text-[16px] font-[400] h-[100px] px-6 services_clip bg-[#fff]">
                       <h1 className='text-[50px] lg:text-[80px] font-[200] italic'>{services.number}</h1>
                       <p>{services.text}</p>
@@ -99,7 +99,7 @@ const Services = () => {
                   <SwiperSlide key={index}>
                     <div className="w-full sm:w-2/3 mx-auto" data-aos='flip-up' data-aos-duration='1500'>
                       <img src={services.image} alt=""
-                        className="w-full h-full" />
+                        className="w-full h-[300px] object-cover object-center" />
                       <div className="text-[#0E4C9C] flex items-center space-x-4 mt-3 text-[11px] lg:text-[14px] xl:text-[16px] font-[400] h-[100px] px-6 services_clip bg-[#fff]">
                         <h1 className='text-[50px] lg:text-[80px] font-[200] italic'>{services.number}</h1>
                         <p>{services.text}</p>

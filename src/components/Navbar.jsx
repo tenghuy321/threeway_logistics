@@ -16,13 +16,13 @@ const Navbar = () => {
                 }}
                 >
                     <li className="relative group">
-                        <NavLink to='/' className={({ isActive }) => `px-5 xl:px-7 py-4 xl:py-[21px] text-[#0E4C9C] nav_link ${isActive ? 'active font-[600]' : ''}`}>About Us</NavLink>
+                        <NavLink to='/' className={({ isActive }) => `px-5 xl:px-7 py-4 xl:py-[21px] text-[#0E4C9C] nav_link ${isActive ? 'active font-[600]' : ''}`}>Home</NavLink>
                     </li>
                     <li className="relative group">
-                        <NavLink to='/logistics' className={({ isActive }) => `px-5 xl:px-7 py-4 xl:py-[21px] text-[#0E4C9C] nav_link ${isActive ? 'active font-[600]' : ''}`}>Logistics</NavLink>
+                        <NavLink to='/about' className={({ isActive }) => `px-5 xl:px-7 py-4 xl:py-[21px] text-[#0E4C9C] nav_link ${isActive ? 'active font-[600]' : ''}`}>About Us</NavLink>
                     </li>
                     <li className="relative group">
-                        <NavLink to='/services' className={({ isActive }) => `px-5 xl:px-7 py-4 xl:py-[21px] text-[#0E4C9C] nav_link ${isActive ? 'active font-[600]' : ''}`}>Services</NavLink>
+                        <NavLink to='/services' className={({ isActive }) => `px-5 xl:px-7 py-4 xl:py-[21px] text-[#0E4C9C] nav_link ${isActive ? 'active font-[600]' : ''}`}>Logistics Services</NavLink>
                     </li>
                     <li className="relative group">
                         <NavLink to='/career' className={({ isActive }) => `px-5 xl:px-7 py-4 xl:py-[21px] text-[#0E4C9C] nav_link ${isActive ? 'active font-[600]' : ''}`}>Careers</NavLink>

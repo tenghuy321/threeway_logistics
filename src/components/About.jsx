@@ -21,7 +21,7 @@ const About = () => {
           <a href="#vision" data-aos='fade-down' data-aos-duration='1500' onClick={(e) => handleScroll(e, "vision")} className="">Vision</a>
           <a href="#mission" data-aos='fade-down' data-aos-duration='1700' onClick={(e) => handleScroll(e, "mission")} className="">Mission</a>
           <a href="#messages" data-aos='fade-down' data-aos-duration='1800' onClick={(e) => handleScroll(e, "messages")}>Massages From CEO</a>
-          <a href="#our_people" data-aos='fade-down' data-aos-duration='2100' onClick={(e) => handleScroll(e, "our_people")}>Our People</a>
+          {/* <a href="#our_people" data-aos='fade-down' data-aos-duration='2100' onClick={(e) => handleScroll(e, "our_people")}>Our People</a> */}
         </div>
 
         <div className='relative flex flex-col justify-center items-center min-h-screen'>

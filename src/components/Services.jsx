@@ -53,7 +53,7 @@ const Services = () => {
       <div>
         <ButtonScroll />
       </div>
-      <section className="w-full min-h-screen relative bg-center bg-cover bg-[#0E4C9C]">
+      <section className="w-full min-h-screen relative bg-center bg-cover bg-[#0E4C9C]/70">
         <div className='relative lg:top-[80px] hidden lg:flex space-x-10 text-[#fff] items-center justify-center w-full z-10 overflow-hidden'>
           <a href="#services" data-aos='fade-down' data-aos-duration='1000' onClick={(e) => handleScroll(e, "services")}>Our Services</a>
           <a href="#future" data-aos='fade-down' data-aos-duration='1000' onClick={(e) => handleScroll(e, "future")}>Future Goals</a>

@@ -69,8 +69,8 @@ const Home = () => {
                 </div>
                 <div className="relative flex flex-col justify-center items-center h-full leading-none text-[#ffff]">
                     <h3 className="text-[18px] sm:text-[20px] md:text-[30px] font-[300]" data-aos='fade-up' data-aos-duration='1200'>Welcome to</h3>
-                    <h1 className="text-[#F6BF22] font-[700] text-[50px] sm:text-[70px] md:text-[90px]" data-aos='fade-up' data-aos-duration='1500'>THREE WAY</h1>
-                    <h2 className="font-[700] tracking-[6px] text-[30px] sm:text-[40px] md:text-[50px]" data-aos='fade-up' data-aos-duration='1800'>LOGISTICS</h2>
+                    <h1 className="text-[#ff6c03] font-[700] text-[50px] sm:text-[70px] md:text-[90px]" data-aos='fade-up' data-aos-duration='1500'>THREE WAY</h1>
+                    <h2 className="font-[700] text-[#ff6c03] tracking-[6px] text-[30px] sm:text-[40px] md:text-[50px]" data-aos='fade-up' data-aos-duration='1800'>LOGISTICS</h2>
                 </div>
 
                 <div className='w-[80%] h-[30px] sm:h-[40px] md:h-[50px] xl:h-[60px] clip_about absolute bottom-0 left-0'>
@@ -80,9 +80,9 @@ const Home = () => {
             {/* aboutus */}
             <section>
                 <div className='max-w-7xl mx-auto px-2 md:px-4 text-[12px] sm:text-[14px] md:text-[16px] pt-10 md:pt-0' id='aboutus'>
-                    <h1 className='text-[30px] md:text-[40px] text-[#F6BF22] font-[700]' data-aos='fade-right' data-aos-duration='1000'>About Us</h1>
+                    <h1 className='text-[30px] md:text-[40px] text-[#ff6c03] font-[700]' data-aos='fade-right' data-aos-duration='1000'>About Us</h1>
                     <div className='mt-2 flex flex-col space-y-3'>
-                        <h1 className='text-[25px] sm:text-[30px] md:text-[40px] text-[#0E4C9C] font-[700] leading-none' data-aos='fade-right' data-aos-duration='1200'>Three Way Logistics Co., LTD </h1>
+                        <h1 className='text-[25px] sm:text-[30px] md:text-[40px] text-[#ff6c03] font-[700] leading-none' data-aos='fade-right' data-aos-duration='1200'>Three Way Logistics Co., LTD </h1>
                         <p className='pt-2 md:pt-4' data-aos='fade-right' data-aos-duration='1400'>was founded and established on 1st February 2024 by Mr. Meng Pheakdey. The company is located in Sangkat Srah Chork, Khan Doun Penh, Phnom Penh.</p>
                         <p data-aos='fade-right' data-aos-duration='1600'>The reason that Three Way Logistics Co., LTD was created is that we would like to contribute into the importing and exporting sectors as we firmly believe that our efforts in contributing into this sector will be an important part in joining hands with other relative parties to develop the sector in the country as strong as in order to compete with logistics sector in other countries. </p>
                         <p data-aos='fade-right' data-aos-duration='1800'>Speaking of brand imported, we do not have certain brands to import as we generally import various types of products.</p>

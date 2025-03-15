@@ -16,7 +16,7 @@ const About = () => {
       <div>
         <ButtonScroll />
       </div>
-      <section className="w-full min-h-screen relative bg-center bg-cover bg-[#0E4C9C]">
+      <section className="w-full min-h-screen relative bg-center bg-cover bg-[#0E4C9C]/70">
         <div className='relative lg:top-[80px] hidden lg:flex space-x-10 text-[#fff] items-center justify-center w-full z-10 overflow-hidden'>
           <a href="#vision" data-aos='fade-down' data-aos-duration='1500' onClick={(e) => handleScroll(e, "vision")} className="">Vision</a>
           <a href="#mission" data-aos='fade-down' data-aos-duration='1700' onClick={(e) => handleScroll(e, "mission")} className="">Mission</a>
@@ -104,7 +104,7 @@ const About = () => {
       </section>
 
 
-      <section id='our_people' className='pt-2'>
+      {/* <section id='our_people' className='pt-2'>
         <hr className='max-w-6xl mx-auto h-2 bg-[#F6BF22]' />
         <div className='bg-[#0E4C9C] w-full min-h-screen md:h-screen overflow-hidden'>
           <div className='max-w-6xl mx-auto px-2 xl:px-0 py-20'>
@@ -159,7 +159,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </>

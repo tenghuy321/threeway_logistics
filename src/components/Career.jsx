@@ -9,7 +9,7 @@ const Career = () => {
         <ButtonScroll />
       </div>
       <section className="w-full h-[60vh] sm:h-screen relative bg-center bg-cover" style={{ backgroundImage: `url(${career_bg})` }}>
-        <div className='absolute inset-0 bg-[#0E4C9C] opacity-80'></div>
+        <div className='absolute inset-0 bg-[#0E4C9C] opacity-60'></div>
         <div className="relative top-[10px] sm:top-[50px] lg:top-[100px] xl:top-[150px] max-w-6xl mx-auto px-2 sm:px-4">
           <h1 className='text-[40px] text-[#F6BF22] font-[700] px-2 sm:px-4' data-aos='fade-right' data-aos-duration='1500'>Career</h1>
           <hr className='h-4 bg-[#F6BF22] border-none my-4' data-aos='fade-right' data-aos-duration='1700' />

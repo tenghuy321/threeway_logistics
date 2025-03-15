@@ -8,7 +8,7 @@ const Footer = () => {
             <div className='absolute inset-0 mix-blend-multiply bg-color min-h-screen'></div>
             <div className='relative w-full min-h-[40%] flex flex-col sm:flex-row items-center justify-center space-x-4 py-10 px-2 lg:py-0 z-10 text-[#fff]' data-aos='fade-right' data-aos-duration='1000'>
                 <img src={logo} alt="" className='w-20 h-20' />
-                <h1 className='text-[30px] md:text-[40px] font-[700]'>Three Way Logistic</h1>
+                <h1 className='text-[30px] md:text-[40px] text-[#ff6c03] font-[700]'>Three Way Logistics</h1>
             </div>
 
             <div className='relative w-full min-h-[60%] py-10 text-[#fff]'>
@@ -26,7 +26,7 @@ const Footer = () => {
                     </div>
 
                     <div className='text-[12px] xl:text-[13px] pt-5 sm:pt-0'>
-                        <h1 className='text-[13px] xl:text-[14px] font-[700]' >Three Way Logistics Co., LTD </h1>
+                        <h1 className='text-[13px] xl:text-[14px] font-[700] text-[#ff6c03]' >Three Way Logistics Co., LTD </h1>
                         <p className='pt-2'>was founded and established on 1st February 2024 by Mr. Meng Pheakdey. The company is located in Sangkat Srah Chork, Khan Doun Penh, Phnom Penh.</p>
 
                         <div className='pt-5 text-[12px] xl:text-[13px] space-y-3'>
